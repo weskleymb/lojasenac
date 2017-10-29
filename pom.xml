@@ -29,7 +29,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>3.2.0</version>
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
@@ -43,10 +43,13 @@
 				</configuration>
 			</plugin>
 			<plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>1.2.4</version>
-            </plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>1.2.4</version>
+				<configuration>
+					<appName>lojasenac</appName>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
